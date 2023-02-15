@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Box-icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-mohit-white-500 m-auto">
+      <!-- Flex container -->
+
+      <div class="h-20 flex items-center justify-between px-6 sm:px-16">
+        <!-- header_logo -->
+        <div>
+          <img src="./assets/header_logo.png" />
+        </div>
+
+        <!-- Menu items -->
+        <div
+          class="hidden md:flex space-x-11 text-mohit-black-800 font-poppins text-base font-medium"
+        >
+          <a href="#">Products</a>
+          <a href="#">Plans</a>
+          <a href="#" class="text-center">
+            <span>More</span>
+            <box-icon type="solid" name="down-arrow" size="xs"></box-icon>
+          </a>
+        </div>
+
+        <div
+          class="hidden md:flex items-center space-x-5 text-mohit-black-800 font-poppins text-base font-medium"
+        >
+          <a href="#">Login</a>
+          <button class="w-52 h-12 bg-mohit-blue-800 text-white rounded-3xl">
+            Request a demo
+          </button>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div>
+        <span
+          class="absolute rounded-lg top-5 md:hidden right-4 cursor-pointer"
+          onclick="openSidebar()"
+        >
+          <box-icon name="menu" size="md" animation="tada-hover"></box-icon>
+        </span>
+      </div>
+      <!-- Sidebar Menu -->
+      <div
+        class="sidebar h-80 fixed top-20 bottom-0 right-0 p-2 w-[300px] overflow-y-auto text-center gradient__blue hidden"
+      >
+        <div class="pt-6">
+          <ul
+            class="flex flex-col gap-6 text-white font-poppins text-base font-medium"
+          >
+            <li>Products</li>
+            <li>Plans</li>
+            <li>
+              <span>More</span>
+              <box-icon
+                type="solid"
+                name="down-arrow"
+                size="xs"
+                color="white"
+              ></box-icon>
+            </li>
+            <li>Login</li>
+            <li>
+              <button
+                class="w-52 h-12 bg-mohit-blue-800 text-white rounded-3xl"
+              >
+                Request a demo
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <div class="bg-mohit-white-300 py-16 overflow-hidden">
+      <div
+        class="flex flex-col font-poppins font-medium items-center text-center gap-8 pb-12"
+      >
+        <div class="w-[70%]">
+          <h1 class="text-5xl sm:text-7xl text-mohit-black-800">
+            Medical Software To Attract And
+            <span class="font-bold">Retain Patients</span>
+          </h1>
+        </div>
+        <div class="w-[35%]">
+          <h4 class="text-xl text-mohit-gray-400">
+            Patientgrid’s communication platform helps improve patient
+            experience while staff hours.
+          </h4>
+        </div>
+        <span
+          class="text-center flex justify-center gap-3 text-2xl text-mohit-black-900 font-medium"
+        >
+          Start for free
+          <span>
+            <box-icon
+              name="chevron-right"
+              color="white"
+              class="h-7 w-7 bg-mohit-blue-800 rounded-full"
+            ></box-icon>
+          </span>
+        </span>
+      </div>
+
+      <div>
+        <div
+          class="hidden md:flex h-[408px] gradient rounded-3xl rotate-[7.43deg]"
+        ></div>
+        <div class="md:absolute md:top-[28rem] md:left-[14rem]">
+          <img
+            src="./assets/banner1.png"
+            alt="banner-1"
+            class="h-[512px] w-[1130px]"
+          />
+        </div>
+      </div>
+      <div class="my-6">
+        <div
+          class="flex flex-col md:flex-row items-center mt-28 gap-16 justify-center"
+        >
+          <div>
+            <div
+              class="w-[406px] h-[300px] bg-mohit-white-500 rounded-2xl shadow-xl"
+            >
+              <img
+                src="./assets/img1.png"
+                alt="img1"
+                class="absolute bg-white mt-8 ml-9 rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="font-poppins font-medium leading-8">
+            <h3 class="text-3xl w-[400px] text-mohit-black-800">
+              Bring new business in by getting more online reviews.
+            </h3>
+            <h5 class="text-2xl w-[300px] text-mohit-gray-400 font-normal">
+              94% Use review to choose new doctor.
+            </h5>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center mt-28 gap-16 justify-center"
+        >
+          <div
+            class="md:order-2 w-[406px] h-[300px] bg-mohit-white-500 rounded-2xl shadow-xl"
+          >
+            <img
+              src="./assets/img2.png"
+              alt="img2"
+              class="absolute bg-white mt-8 mr-9 rounded-2xl shadow-2xl"
+            />
+          </div>
+          <div class="md:order-1 font-poppins font-medium leading-8">
+            <h3 class="text-3xl w-[400px] text-mohit-black-800">
+              Save time with collaborative tools and automations.
+            </h3>
+            <h5 class="text-2xl w-[300px] text-mohit-gray-400 font-normal">
+              15+ Staff hours saved per week.
+            </h5>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center mt-28 gap-16 justify-center"
+        >
+          <div>
+            <div
+              class="w-[406px] h-[300px] bg-mohit-white-500 rounded-2xl shadow-xl"
+            >
+              <img
+                src="./assets/img3.png"
+                alt="img3"
+                class="absolute bg-white mt-8 rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="font-poppins font-medium leading-8">
+            <h3 class="text-3xl w-[400px] text-mohit-black-800">
+              Improve patient experience engaging the way they want.
+            </h3>
+            <h5 class="text-2xl w-[300px] text-mohit-gray-400 font-normal">
+              90% People prefer texts to phone calls.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-24 flex justify-center">
+        <div
+          class="w-[1160px] h-auto md:h-[581px] flex items-center justify-center bg-mohit-blue-200 rounded-3xl px-6 flex-wrap md:flex-nowrap"
+        >
+          <div class="font-poppins">
+            <h2 class="w-[485px] text-4xl font-medium">
+              Seamless collaboration for healthcare teams
+            </h2>
+            <h5 class="w-[394px] mt-5 text-mohit-gray-400 text-lg font-normal">
+              With shared inboxes, any team member can resolve the team’s
+              pending tasks. Individual staff member don’t get overwhelmed and
+              patients are always take care of.
+            </h5>
+          </div>
+          <div>
+            <img src="./assets/banner2.png" alt="banner-2" />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-24 flex justify-center">
+        <div class="w-[1160px] h-[378px] flex bg-mohit-blue-200 rounded-3xl">
+          <div>
+            <img src="./assets/img4.png" alt="img4" />
+          </div>
+          <div
+            class="font-poppins font font-medium flex flex-col justify-center"
+          >
+            <h2 class="text-4xl text-mohit-black-800 h-[50]">
+              We work on a month-to-month basis, try for free with no
+              commitments
+            </h2>
+            <h4 class="text-normal text-mohit-gray-400 text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function openSidebar() {
+        document.querySelector(".sidebar").classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
